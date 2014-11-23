@@ -204,7 +204,7 @@ body{
 	clear: both;
 }
 #content {
-	
+	padding: 20px;
 }
 
 .post-edit-link{
@@ -650,8 +650,8 @@ width: 170px;
 #apropos .right{
 	float: right;
 	width: 400px;
-	margin-top: 40px;
-	margin-right: 10px;
+	margin-top: 50px;
+	margin-right: 11px;
 	border: 2px solid #009030;
 	border-right: none;
 	padding-bottom: 86px;
