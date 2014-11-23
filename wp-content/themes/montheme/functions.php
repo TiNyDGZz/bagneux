@@ -1,0 +1,105 @@
+<?php
+
+function theme_enfant_theme_init()
+{
+	// This theme styles the visual editor with editor-style.css to match the theme style.
+	add_editor_style();
+	
+	// This theme uses post thumbnails
+	add_theme_support( 'post-thumbnails' );
+	
+	// Add default posts and comments RSS feed links to head
+	add_theme_support( 'automatic-feed-links' );
+	
+	// Make theme available for translation
+	// Translations can be filed in the /languages/ directory
+	load_theme_textdomain( 'theme_enfant', get_template_directory() . '/languages' );
+	
+	// Post Format support. You can also use the legacy "gallery" or "asides" (note the plural) 	categories.
+	add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
+	
+	
+	
+function theme_enfant_widgets_init() {
+	// Area 1, located at the top of the sidebar.
+	register_sidebar( array(
+		'name' => __( 'Primary Widget Area', 'theme_enfant' ),
+		'id' => 'primary-widget-area',
+		'description' => __( 'The primary widget area', 'theme_enfant' ),
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
+	register_sidebar( array(
+		'name' => __( 'Secondary Widget Area', 'theme_enfant' ),
+		'id' => 'secondary-widget-area',
+		'description' => __( 'The secondary widget area', 'theme_enfant' ),
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+}
+/** Register sidebars by running theme_enfant_widgets_init() on the widgets_init hook. */
+add_action( 'widgets_init', 'theme_enfant_widgets_init' );
+
+
+}
+
+add_action('after_setup_theme','theme_enfant_theme_init');
+
+if ( ! function_exists( 'theme_enfant_posted_on' ) ) :
+
+/* Prints HTML with meta information for the current post-date/time and author.
+ *
+ * @since Twenty Ten 1.0
+ */
+function theme_enfant_posted_on() {
+	printf( __( '<span class="%1$s">Posted on</span> %2$s <span class="meta-sep">by</span> %3$s', 'theme_enfant' ),
+		'meta-prep meta-prep-author',
+		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a>',
+			get_permalink(),
+			esc_attr( get_the_time() ),
+			get_the_date()
+		),
+		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
+			get_author_posts_url( get_the_author_meta( 'ID' ) ),
+			esc_attr( sprintf( __( 'View all posts by %s', 'theme_enfant' ), get_the_author() ) ),
+			get_the_author()
+		)
+	);
+}
+endif;
+
+if ( ! function_exists( 'theme_enfant_posted_in' ) ) :
+/**
+ * Prints HTML with meta information for the current post (category, tags and permalink).
+ *
+ * @since Twenty Ten 1.0
+ */
+function theme_enfant_posted_in() {
+	// Retrieves tag list of current post, separated by commas.
+	$tag_list = get_the_tag_list( '', ', ' );
+	if ( $tag_list ) {
+		$posted_in = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'theme_enfant' );
+	} elseif ( is_object_in_taxonomy( get_post_type(), 'category' ) ) {
+		$posted_in = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'theme_enfant' );
+	} else {
+		$posted_in = __( 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'theme_enfant' );
+	}
+	// Prints the string, replacing the placeholders.
+	printf(
+		$posted_in,
+		get_the_category_list( ', ' ),
+		$tag_list,
+		get_permalink(),
+		the_title_attribute( 'echo=0' )
+	);
+}
+endif;
+
+ 

@@ -1,0 +1,1107 @@
+/*
+Theme Name: Régie de quartier de Bagneux
+Theme URI: 
+Description: The first theme created by Charlotte Vidaud.
+Version: 0.1
+Author: Charlotte Vidaud
+ 
+
+ 
+*/
+
+
+/*Corps de page*/
+
+body{
+	background-color: white;
+	margin: 0px;
+	position: relative;
+	background: url('images/fond.png');
+	background-repeat: repeat;
+}
+
+#bordure_gauche img{
+	position: absolute;
+	top: 122px;
+	left: 20px;
+}
+
+#bordure_droite img{
+	position: absolute;
+	top: 122px; 
+	left: 1192px;
+}
+
+#wrapper{
+	margin: 0 auto;
+	width: 960px;
+	height: auto;
+	box-shadow: 0 0 10px #888;
+	font-family: Myriad Pro;
+	text-align: justify;
+}
+
+/*Header*/
+
+#header{
+	height: auto;
+	background-image: url('images/header.png');
+	background-size: auto;
+}
+
+
+
+
+#logo{
+	margin-bottom: 9px;
+	margin-left: 48px;
+	float: left;
+}
+
+#logo img{
+	width: auto;
+	height: auto;
+	clear: both;
+}
+
+/*Menu principal*/
+
+#access{
+	clear: both;
+}
+
+#access ul{
+	padding: 0px;
+	margin: 0px;
+	height: 52px;
+	background: -webkit-gradient(linear, center top, center bottom, from(#578ec2), to(#386b9b));
+	background: linear-gradient(to bottom, #578ec2, #386b9b);
+}
+
+#access ul li{
+	width: 186px;
+	height: auto;
+	display:inline-block;
+	list-style-type: none;
+	padding-top: 9px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+
+#access #recrutement{
+	
+	background: -webkit-gradient(linear, center top, center bottom, from(#fd923f), to(#cf7609));
+	background: linear-gradient(to bottom, #fd923f, #cf7609);
+	padding-right: 33px;
+	margin-left:-3px;
+	position: relative;
+	height: 33px;
+}
+
+#access #recrutement a {
+	position: absolute;
+	left: 50px;
+}
+
+
+
+#access img{
+	width: 35px;
+	height: 32px;
+	float: left;
+	clear: both;
+	margin-left: 13px;
+}
+
+#access .color{
+	display:none;
+}
+
+
+#access .blanc{
+	display: block;
+}
+
+
+#access a {
+	clear: both;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding-left: 5px;
+	padding-top: 9px;
+	font-size: 20px;
+}
+
+#access ul ul {
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	display: none;
+	position: absolute;
+	top: 52px;
+	
+	float: left;
+	width: 219px;
+	height: 100px;
+	z-index: 99999;
+	background: #fd9240;
+	padding-top: 0px;
+}
+#access ul ul li {
+	min-width: 219px;
+	background: #fd9240;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 30px;
+}
+
+#access ul ul a {
+	width: 186px;
+	height: auto;
+	height: 30px;
+}
+#access li:hover{
+	background: -webkit-gradient(linear, center top, center bottom, from(white), to(#edeaea));
+	background: linear-gradient(to bottom, white, #edeaea);
+}
+
+#access ul ul li:hover{
+	background:#cb7a17;
+
+
+	#access ul ul li a{
+		background:#cb7a17;
+	}
+}
+
+#access #recrutement:hover{
+	background: -webkit-gradient(linear, center top, center bottom, from(white), to(#edeaea));
+	background: linear-gradient(to bottom, white, #edeaea);
+}
+#access ul li:hover > ul {
+	display: block;
+}
+#access ul li.current_page_item > a,
+#access ul li.current-menu-ancestor > a,
+#access ul li.current-menu-item > a,
+#access ul li.current-menu-parent > a {
+	color: #fff;
+}
+* html #access ul li.current_page_item a,
+* html #access ul li.current-menu-ancestor a,
+* html #access ul li.current-menu-item a,
+* html #access ul li.current-menu-parent a,
+* html #access ul li a:hover {
+	color: #fff;
+}
+
+
+/**************Content*************/
+
+#container {
+	clear: both;
+}
+#content {
+	
+}
+
+.post-edit-link{
+	display: none;
+}
+
+/*************ACCUEIL***************/
+#slider{
+	background-image: url('images/slider.png');
+	width: 960px;
+	height: 250px;
+}
+
+#bloc1{
+	margin-top: 30px;
+	float: left;
+	width: 570px;
+	margin-left: 6px;
+	font-size: 15px;
+	font-family: Trebuchet MS;
+}
+
+#bloc2{
+	margin-top: 30px;
+	width: 377px;
+	float: right;
+	margin-right: 7px;
+	font-size: 13px;
+	font-family: Trebuchet MS;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#presentation{
+	color: #3b71a2;
+	border-bottom: 2px solid #ed6426;
+	margin: 0px;
+	margin-bottom: 3px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+#sociale{
+	color: #ed6426;
+	border-bottom: 2px solid #ed6426;
+	margin: 0px;
+	margin-bottom: 3px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+}
+
+#eco{
+	color: #009030;
+	border-bottom: 2px solid #009030;
+	margin: 0px;
+	margin-bottom: 3px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+}
+
+#politique{
+	color: #3b70a2;
+	margin: 0px;
+	margin-bottom: 3px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+}
+
+#vert{
+	border-right: 2px solid #009030;
+	border-top: 2px solid #009030;
+	height: 210px;
+}
+
+.texte a{
+	text-decoration: none;
+	color: #3b70a2;
+	border-bottom: 1px solid #3b70a2;
+}
+
+
+
+.texte1{
+	height: 320px;
+	margin-top: 3px;
+	margin-right: 4px;
+	border-top: 2px solid #427db6;
+	border-right: 2px solid #427db6;
+	padding-right: 20px;
+	padding-bottom: 126px;
+	padding-left: 15px;
+}
+
+.texte1 .texte{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.texte1 img{
+	float: left;
+	padding-right: 15px;
+}
+
+.texte2,
+.texte3,
+.texte4{
+	padding-right: 10px;
+}
+
+.texte2{
+	margin-bottom: 22px;
+	margin-top: 20px;
+}
+
+.texte2 ul li{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style-image: url('http://www.rqbagneux.fr/wp-content/uploads/2012/12/list_orange.png');
+}
+
+.texte3{
+	margin-bottom: 35px;
+	margin-top: 30px;
+}
+
+.texte3 ul li{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style-image: url('http://www.rqbagneux.fr/wp-content/uploads/2012/12/list_vert.png');
+}
+
+.texte4{
+	margin-top: 35px;
+}
+
+.texte4 ul li{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style-image: url('http://www.rqbagneux.fr/wp-content/uploads/2012/12/list_bleu.png');
+}
+
+#calendrier{
+	width: 950px;
+	margin-top: 220px;
+	border-top: 2px solid #427db6;
+}
+
+#calendrier_content{
+	width: 562px;
+	height: 195px;
+	border-right: 2px solid #427db6;
+}
+
+#calendrier_content h3{
+	background: -webkit-gradient(linear, center top, center bottom, from(#5e93c5), to(#386a99));
+	background: linear-gradient(to bottom, #5e93c5, #386a99);
+	color: white;
+	margin: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	width: 553px;
+	
+}
+
+
+#calendrier_content img{
+	padding-top: 10px;
+	float: left;
+}
+
+#calendrier_content p{
+	font-size: 18px;
+	font-style: italic;
+	color: #427db6;
+	text-align: center;
+}
+
+#calendrier .texte{
+	padding-right: 20px;
+	padding-top: 10px;
+
+}
+
+#button{
+	background: -webkit-gradient(linear, center top, center bottom, from(#5e93c5), to(#386a99));
+	background: linear-gradient(to bottom, #5e93c5, #386a99);
+	border-radius: 15px;
+	float: left;
+	width: 100px;
+	padding: 5px;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+#button img{
+	clear: both;
+	float: left;
+	padding: 0px;
+}
+
+#button a{
+	color: white;
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+}
+
+/************PRESTATIONS*************/
+
+#prestations{
+	height: auto;
+	position: relative;
+}
+
+#prestations #bleu2{
+	width: 383px;
+	height: 20px;
+	position: absolute;
+	left: 570px;
+	top: 725px;
+	border-top: 2px solid #427db6;
+}
+
+#prestations #slider{
+	background-image: url('images/slider_prest.png');
+	width: 960px;
+	height: 250px;
+}
+
+#slider_main{
+	overflow: hidden;
+	display: inline-block;
+	float: right;
+	background-image: url('images/fond_widget.png');
+	width: 300px;
+	height: 250px;
+}
+
+#slider_main h3{
+width: 170px;
+	color: #ed6426;
+	font-weight: bold;
+	padding: 5px 0px 5px 0px;
+	margin: 15px 40px 15px 35px;
+	text-align: center;
+	font-size: 20px;
+	background: -webkit-gradient(linear, center top, center bottom, from(white), to(#edeaea));
+	background: linear-gradient(to bottom, white, #edeaea);
+	border-radius: 12px;
+	float: right;
+}
+
+#slider_main ul{
+	float: right;
+	padding-right: 60px;
+	margin: 0px;
+}
+
+#slider_main ul li{
+	list-style-type: none;
+	padding-bottom: 15px;
+}
+
+#slider_main ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+#prestations #sociale, 
+#prestations #eco,
+#prestations #politique{
+	font-size: 16px;
+	padding-left: 15px;
+}
+
+#prestations #bloc1{
+	margin-bottom: 30px;
+}
+
+#prestations #bloc2{
+	margin-top: 18px;
+}
+
+#prestations #bloc2 li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+#prestations #vert{
+	height: 228px;
+}
+
+#prestations .texte1{
+	padding-bottom: 15px;
+	height: 690px;
+}
+
+#prestations .texte{
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+}
+
+#prestations #last{
+	color: #427db6;
+	float: right;
+}
+
+
+#prestations #entreprise_content{
+	
+	margin-top: 70px;
+	
+}
+
+#entreprise_content h2{
+	margin: 0px;
+	width: 250px;
+	padding-top: 10px;
+	float: left;
+}
+
+#entreprise_content p{
+	margin: 0px;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+#entreprise_content p a{
+	padding-left: 95px;
+	color: #427db6;
+}
+
+#entreprise_content ul{
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 15px;
+}
+
+#entreprise_content ul li{
+	padding: 10px 0px 5px 0px;
+}
+
+#prestations .texte2,
+#prestations .texte3,
+#prestations .texte4{
+	margin: 15px 0px 15px 0px;
+}
+
+/*********PAGE A PROPOS*********/
+#apropos #slider{
+	background-image: url('images/slider_apropos.png');
+}
+
+#slider_main h3{
+	margin-bottom: 5px;
+}
+.contact_infos{
+	float: right;
+	padding-right: 10px;
+}
+
+.contact_infos p{
+	color: white;
+	font-size: 13px;
+	font-style: italic;
+	padding-left: 55px;
+	margin: 0px;
+	padding-top: 10px;
+}
+
+.contact_infos .first{
+	font-weight: bold;
+	font-size: 14px;
+	font-style: normal;
+	padding-left: 0px;
+}
+
+.contact_infos .last1{
+	padding-left: 65px;
+}
+
+.contact_infos .last2{
+	float: right;
+	padding-bottom: 0px;
+}
+
+#apropos .left{
+	float: left;
+	width: 531px;
+	border-left: 2px solid #009030;
+	margin-left: 15px;
+	margin-bottom: 30px;
+}
+
+#apropos #orange{
+	width: 17px;
+	height: 10px;
+	margin-left: 10px;
+	border-bottom: 2px solid #ed6426;
+}
+
+#apropos #vert2{
+	width: 25px;
+	height: 30px;
+}
+
+#apropos .equipe{
+	color: #ed6426;
+	border-bottom: 2px solid #ed6426;
+	border-left: 2px solid #ed6426;
+	margin: 0px 10px 5px 25px;
+	padding: 20px 5px 0px 10px;
+	font-size: 20px;
+}
+
+#apropos #equipe{
+	padding-left: 20px;
+}
+
+#apropos #partenaire{
+	border-bottom: 2px solid #009030;
+	height: 310px;
+}
+
+#partenaire img{
+	padding: 6px;
+}
+
+#partenaire p{
+	margin: 0px;
+}
+
+#apropos .right{
+	float: right;
+	width: 400px;
+	margin-top: 40px;
+	margin-right: 10px;
+	border: 2px solid #009030;
+	border-right: none;
+	padding-bottom: 86px;
+}
+
+#apropos h2{
+	color: #3b70a2;
+	margin: 15px 10px 0px 10px;
+	padding: 0px 0px 0px 25px;
+	font-size: 24px;
+	border-bottom: 2px solid #3b70a2;
+}
+
+.left h4{
+	font-style: italic;
+	font-size: 16px;
+}
+
+.left .partenaire{
+	color: #009030;
+	border-bottom: 2px solid #009030;
+	margin: 0px;
+	margin-bottom: 3px;
+	padding: 43px 0px 5px 25px;
+}
+
+.right .title_right,
+.title_right2,
+#plan,
+.right p{
+	padding-left: 15px;
+}
+
+#plan{
+	padding-left: 25px;
+}
+
+#plan #button{
+	width: 120px;
+	margin-left: 0px;
+}
+
+#plan #button a{
+	float: left;
+	padding-top: 5px;
+}
+
+.right .title_right{
+	font-style: italic;
+	color: #757575;
+	margin: 28px 0px 3px 0px;
+	padding: 0px 0px 5px 25px;
+
+}
+
+.right .title_right2{
+	font-style: italic;
+	color: #757575;
+	border-bottom: 2px solid #009030;
+	margin: 58px 0px 3px 0px;
+	padding: 20px 0px 6px 25px;
+}
+
+.right p{
+	margin: 0px;
+}
+
+.right .horaires1{
+	padding: 40px 0px 20px 0px;
+}
+
+.right .horaires2{
+	padding-bottom: 30px;
+	
+}
+
+/***********INSERTION***********/
+
+#insertion #slider{
+	background-image: url('images/slider_inser.png');
+}
+
+#insertion #presentation{
+	font-size: 16px;
+}
+
+#insertion #bloc1{
+	margin-top: 54px;
+}
+
+#insertion #vert{
+	height: 302px;
+}
+
+#insertion #sociale, 
+#insertion #eco{
+	font-size: 16px;
+	padding-left: 15px;
+}
+
+#insertion #bloc2{
+	margin-top: 18px;
+}
+
+
+
+#insertion .texte1{
+	padding-bottom: 150px;
+}
+
+#insertion .texte{
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+}
+
+#insertion .download{
+	margin: 75px 0px 0px 10px;
+}
+
+#insertion .download a{
+	text-decoration: none;
+	margin-top: 10px;
+	color: #3b70a2;
+	border-bottom: 1px solid #3b70a2;
+}
+
+#plaquette{
+	width: 945px;
+	margin-top: 170px;
+	border-top: 2px solid #427db6;
+}
+
+#plaquette_content{
+	width: 562px;
+	height: 195px;
+	border-right: 2px solid #427db6;
+}
+
+#plaquette_content h3{
+	background: -webkit-gradient(linear, center top, center bottom, from(#5e93c5), to(#386a99));
+	background: linear-gradient(to bottom, #5e93c5, #386a99);
+	color: white;
+	margin: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	width: 553px;
+}
+
+/***********ANIMATION*************/
+
+#animation #slider{
+	background-image: url('images/slider_anim.png');
+}
+
+#animation #slider_main h3{
+	margin-bottom: 5px;
+}
+#animation .contact_infos{
+	float: right;
+	padding-right: 10px;
+}
+
+#animation .contact_infos p{
+	color: white;
+	font-size: 13px;
+	font-style: italic;
+	padding-left: 55px;
+	margin: 0px;
+	padding-top: 10px;
+}
+
+#animation .contact_infos .first{
+	font-weight: bold;
+	font-size: 14px;
+	font-style: normal;
+	padding-left: 0px;
+}
+
+#animation .contact_infos .last1{
+	padding-left: 65px;
+}
+
+#animation .contact_infos .last2{
+	float: right;
+	padding-bottom: 0px;
+}
+
+#anim_content{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#animation .texte{
+	margin-top: 70px;
+	padding-left:250px;
+}
+
+#anim_content img{
+	padding-left: 20px;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.jardin{
+	color: #3b70a2;
+	border-bottom: 2px solid #3b70a2;
+	padding-left: 10px;
+}
+
+.brico{
+	clear: both;
+	color: #ed6426;
+	border-bottom: 2px solid #ed6426;
+	padding-left: 10px;
+}
+
+/************RECRUTEMENT*************/
+
+#page_recrutement{
+	margin: 30px 10px 0px 10px; 
+}
+
+#page_recrutement #politique{
+	border-bottom: 2px solid #3b70a2;
+}
+
+#page_recrutement .discours{
+	
+	border-left: 2px solid #ed6426;
+}
+
+#page_recrutement .discours .texte{
+	padding: 10px 20px 20px 20px;
+}
+
+#page_recrutement #button{
+	margin: 30px 0px 40px 20px;
+	width: 180px;
+	height: 25px;
+}
+
+#page_recrutement #button a{
+	float: left;
+	padding: 3px 0px 0px 10px;
+	font-weight: bold;
+}
+
+/**********SINGLE POST***********/
+
+.navigation{
+	display: none;
+}
+
+/**********PAGE CALENDRIER***********/
+
+/*#calendar_wrapLarge{
+	width: 700px;
+	margin-left: 150px;
+	margin-top: 50px;
+}
+
+#calendar_wrapLarge h2{
+	margin: 0px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background: -webkit-gradient(linear, center top, center bottom, from(#5e93c5), to(#386a99));
+	background: linear-gradient(to bottom, #5e93c5, #386a99);
+}
+
+#calendar_wrapLarge h2 span{
+	color: white;
+}
+
+#EC_current-month{
+	color: white;
+	font-weight: bold;
+}
+
+#calendar_wrapLarge thead{
+	background: #5a8ec4;
+}
+
+#calendar_wrapLarge thead th{
+	color: white;
+}*/
+
+
+
+
+/*******Sidebar*********/
+#primary {
+	overflow: hidden;
+	display: inline-block;
+	float: right;
+	background-image: url('images/fond_widget.png');
+	width: 300px;
+	height: 250px;
+}
+
+/* =Widget Areas
+-------------------------------------------------------------- */
+
+.widget-area ul {
+	list-style: none;
+	margin: 0;
+	text-align: center;
+	
+}
+.widget-area ul li{
+	float: right;
+	list-style-type: none;
+}
+.widget-area ul ul {
+	list-style: square;
+	margin-left: 1.3em;
+}
+
+.widget-area ul ul li{
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+.widget-area select {
+	max-width: 100%;
+}
+.widget_search #s {/* This keeps the search inputs in line */
+	width: 60%;
+}
+.widget_search label {
+	display: none;
+}
+.widget-container {
+	margin: 0 0 18px 0;
+}
+.widget-title {
+	width: 170px;
+	color: #ed6426;
+	font-weight: bold;
+	padding: 5px 0px 5px 0px;
+	margin: 15px 40px 15px 35px;
+	text-align: center;
+	font-size: 20px;
+	background: -webkit-gradient(linear, center top, center bottom, from(white), to(#edeaea));
+	background: linear-gradient(to bottom, white, #edeaea);
+	border-radius: 12px;
+}
+
+.widget-area a{
+	color: white;
+	font-weight: bold;
+}
+.widget-area a:link,
+.widget-area a:visited {
+	text-decoration: none;
+}
+.widget-area a:active,
+.widget-area a:hover {
+	text-decoration: underline;
+}
+.widget-area .entry-meta {
+	font-size: 11px;
+}
+
+
+/* Main sidebars */
+#main .widget-area ul {
+	margin-left: 0;
+	padding: 0 20px 0 0;
+}
+#main .widget-area ul ul {
+	border: none;
+	margin-left: 1.3em;
+	padding: 0;
+}
+
+#galerie{
+	margin-top: 170px;
+	width: 300px;
+	height: 80px;
+	display: block;
+}
+
+#galerie img{
+	padding-left: 50px;
+}
+
+#galerie img:hover{
+	opacity: 0.7;
+}
+
+.nocomments{
+	display: none;
+}
+
+/*Single Post*/
+
+.entry-meta, .entry-utility{
+	display: none;
+}
+
+
+/*Footer*/
+
+#footer{
+	clear:both;
+	height: 35px;
+	background: -webkit-gradient(linear, center top, center bottom, from(#5e93c5), to(#386a99));
+	background: linear-gradient(to bottom, #5e93c5, #386a99);
+}
+
+#copyright{
+	display: inline-block;
+	padding-top: 9px;
+	padding-left: 250px;
+}
+
+#copyright p{
+	color: white;
+	margin: 0px;
+	font-size: 15px;
+}
+
+/* hack Chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#access #recrutement {
+		padding-right: 33px;
+	}
+	
+	#menu_footer{
+	width: 400px;
+	}
+	
+	#access ul ul {
+	
+	width: 219px;
+	}
+	
+	#access ul ul li {
+	min-width: 219px;
+	}
+	
+	#vert{
+		height: 202px;
+	}
+	
+	.texte1{
+		padding-bottom: 120px;
+	}
+
+}
+
